@@ -1,0 +1,249 @@
+/*
+* Template Name: Personal Resume
+* Template URI:
+* Description: Personal Resume
+* Author: Vakadu Vinod
+* Author URI:
+* Version: 1.0
+*/
+
+
+/*---------------------------------------------------------------------- /
+Table of Contents
+------------------------------------------------------------------------ /
+
+* 1 - Imported Stylesheets
+* 2 - General Styles
+*   2.1 - Button Styles
+*   2.2 - Social Icons
+* 3 - Header
+*   3.1 - Navigation One
+*   3.2 - Navigation Two
+* 4 - Section
+*   4.1 - Section Title
+* 5 - Parallax
+*   5.1 - Parallax Backgrounds
+* 6 - Home
+* 7 - About
+* 8 - Resume
+*   8.1 - Timeline
+* 9 - Milstone Counters
+* 10 - Service Items
+* 11 - Skill
+*   11.1 - Skill Chart
+* 12 - Work Process
+* 13 - Portfolio
+*   13.1 - Isotop Transitions
+*   13.2 - Portfolio Single Page
+* 14 - Pricetable BG
+*   14.1 - Pricing
+* 15 - Blog
+* 16 - Clients
+*   16.1 - Testimonials
+*   16.2 - Clients Logo
+* 17 - Contact
+* 18 - Footer
+*   18.1 - Tweet List
+*   18.2 - Footers Widgets
+*   18.3 - Footer Social Icons
+* 19 - Color Switcer
+* 20 - Preloader
+
+
+/* 2 - General Styles
+------------------------------------------------------------------------*/
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #7e878f;
+    background-color: #FFFFFF;
+    font-weight: 300;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.ui-tabs-hide {
+    display: none;
+}
+
+br.clear {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    padding-bottom: 5px;
+    color: #373432;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #111;
+}
+
+/*
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+*/
+p {
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+strong {
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+cite, em, i {
+    font-style: italic;
+}
+
+pre, code {
+    font-family: Courier New, monospace;
+    margin-bottom: 10px;
+}
+
+ins {
+    text-decoration: none;
+}
+
+sup, sub {
+    height: 0;
+    line-height: 1;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 0.8em;
+}
+
+sub {
+    top: 0.3em;
+}
+
+dl {
+    margin: 0 0 1.5em 0;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 1.5em;
+}
+
+blockquote {
+    margin: 1.5em;
+    padding: 1em;
+    color: #666666;
+    background: #e6e6e6;
+    font-style: italic;
+    border: 1px solid #dcdcdc;
+}
+
+blockquote p {
+    padding-bottom: 0;
+}
+
+input[type=text], input.text, input.title, textarea, select {
+    background-color: #FFFFFF;
+    border: 1px solid #bbb;
+    padding: 2px;
+    color: #4e4e4e;
+}
+
+input[type=text]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {
+    border-color: #2D3940;
+    color: #3e3e3e;
+}
+
+input[type=text], input.text, input.title, textarea, select {
+    margin: 0.5em 0;
+}
+
+textarea {
+    padding: 0.25rem;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .clearfix {
+    zoom: 1;
+}
+
+/* IE7 */
+ul, ol {
+    margin: 0;
+}
+
+a:focus {
+    outline: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+blockquote {
+    background: none;
+    border: none;
+    font-style: normal;
+}
+
+blockquote p {
+    font-size: 1.0625rem;
+    font-weight: bold;
+    line-height: 1.875rem;
+}
+
+/* 4 - Section
+------------------------------------------------------------------------*/
+.section{
+    padding: 150px 0;
+    position: relative;
+}
+
+/* 6 - Home
+------------------------------------------------------------------------*/
+
