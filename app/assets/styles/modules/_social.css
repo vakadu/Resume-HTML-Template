@@ -1,0 +1,56 @@
+.social{
+    padding: 0;
+    margin: 5px 0;
+    list-style: none;
+    text-align: center;
+
+    li{
+        display: inline-block;
+        padding: 0;
+        margin-bottom: 3px;
+
+        a i{
+            border-radius: 50%;
+            border: 1px solid $white;
+            color: $white;
+            opacity: .6;
+            background: transparent;
+            display: block;
+            height: 36px;
+            width: 36px;
+            font-size: 1.87rem;
+            line-height: 36px;
+            margin: 0 1rem 1rem 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a i.fa.fa-facebook:hover{
+            background-color:#3c5fac;
+            opacity: 1;
+            border-color: #3c5fac;
+            transition: all .5s;
+        }
+
+        a i.fa.fa-github:hover{
+            background-color: #333;
+            opacity: 1;
+            border-color: #333;
+            transition: all .5s;
+        }
+
+        a i.fa.fa-google-plus:hover{
+            background-color: #c63d2d;
+            opacity: 1;
+            border-color: #c63d2d;
+            transition: all .5s;
+        }
+
+        a i.fa.fa-dribbble:hover{
+            background-color: #ee66aa;
+            opacity: 1;
+            border-color: #ee66aa;
+            transition: all .5s;
+        }
+    }
+}

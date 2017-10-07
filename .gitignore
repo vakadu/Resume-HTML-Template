@@ -2,3 +2,4 @@
 .htaccess
 LICENSE.txt
 README.md
+node_modules/**
