@@ -14,9 +14,10 @@
         font-weight: bold;
 
         p{
-            color: $orange;
+            color: $black;
             font-size: 1.75rem;
             padding-bottom: 10px;
+            font-weight: 300;
         }
     }
 
@@ -29,7 +30,7 @@
     }
 
     &__signature{
-        color: $orange;
+        color: $green;
         font-family: 'Arizonia', cursive;
         font-size: 4rem;
         margin-top: 30px;
@@ -39,10 +40,10 @@
     &__extra{
         h4{
             text-transform: uppercase;
-            color: $orange;
+            color: $black;
             font-size: 1.75rem;
             margin-bottom: 2rem;
-            font-weight: bold;
+            font-weight: 300;
         }
     }
 
@@ -51,7 +52,7 @@
             padding: 0;
 
             li{
-                background-color: $white;
+                background-color: #f1f1f1;
                 display: inline-block;
                 float: left;
                 margin: 0 10px 10px 0;

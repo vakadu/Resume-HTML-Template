@@ -164,8 +164,8 @@ blockquote p {
     }
 .social li a i{
             border-radius: 50%;
-            border: 1px solid #d8e4ff;
-            color: #d8e4ff;
+            border: 1px solid #ffffff;
+            color: #ffffff;
             opacity: .6;
             background: transparent;
             display: block;
@@ -206,11 +206,11 @@ blockquote p {
             transition: all .5s;
         }
 .btn{
-    background-color: #f18805;
+    background-color: none;
     border-color: rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #FFFFFF;
+    color: #ffffff;
     text-shadow: none;
     font-weight: bold;
 }
@@ -218,7 +218,7 @@ blockquote p {
         margin-left: 12px;
     }
 .btn:hover, .btn:focus{
-        color: #FFFFFF;
+        color: #ffffff;
     }
 .btn--vv{
         border-radius: 3px;
@@ -226,10 +226,26 @@ blockquote p {
         text-transform: uppercase;
         display: inline-block;
     }
+.btn--medium {
+        font-size:14px;
+        padding:12px 20px;
+        line-height:14px
+    }
 .btn--large {
         font-size:16px;
         padding:15px 25px;
         line-height:16px
+    }
+.btn--green{
+        background-color: #57AA02;
+    }
+.btn--ghost{
+        border: 3px solid #ffffff;
+        background: transparent;
+        letter-spacing: 2px;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 0;
     }
 .home{
     background: url("/assets/img/bg-home.jpeg");
@@ -258,19 +274,52 @@ blockquote p {
 .home__container{
         padding: 9.0625rem 1.25rem;
     }
+.home__col{
+        z-index: 5;
+    }
 .home__overlay{
-        background: repeat scroll 0 0 rgba(57, 62, 65, .6);
+        background: repeat scroll 0 0 rgba(0, 0, 0, .5);
         height: 100%;
         min-height: 615px;
         position: relative;
     }
+.home__overlay:before{
+         content: "";
+         position: absolute;
+         width: 50%;
+         -webkit-transition: top 1s ease 0.3s, background 1s ease 0s;
+         transition: top 1s ease 0.3s, background 1s ease 0s;
+         left: 0;
+         top: 0;
+         height: 100%;
+         background: rgba(255, 255, 255, 0.1);
+    }
+.home__overlay:after{
+         content: "";
+         position: absolute;
+         width: 50%;
+         -webkit-transition: bottom 1s ease 0.3s, background 1s ease 0s;
+         transition: bottom 1s ease 0.3s, background 1s ease 0s;
+         right: 0;
+         bottom: 0;
+         height: 100%;
+         background: rgba(255, 255, 255, 0.13);
+    }
+.home:hover .home__overlay:before{
+        background: rgba(0, 0, 0, 0.6)
+    }
+.home:hover .home__overlay:after{
+        background: rgba(0, 0, 0, 0.7);
+    }
 .home__logo{
-        width: 150px;
-        height: 150px;
-        border-radius: 0.3125rem;
+        /*width: 150px;*/
+        /*height: 150px;*/
+        /*border-radius: 0.3125rem;*/
         position: relative;
         cursor: default;
         margin: 0 auto;
+        text-align: center;
+        padding: 6rem 0;
     }
 .home__my-info{
         text-align: center;
@@ -278,9 +327,13 @@ blockquote p {
         margin-bottom: 2.5rem;
     }
 .home__my-info h2{
-            color: #d8e4ff;
+            font-family: 'Cormorant Garamond', serif;
+            color: #ffffff;
             font-size: 2.4rem;
-            font-weight: 300;
+            margin-bottom: 1.25rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
         }
 @media (min-width: 530px) {
 .home__my-info h2{
@@ -288,15 +341,23 @@ blockquote p {
         }
     }
 .home__my-info h3{
-            color: #d8e4ff;
+            color: #ffffff;
             font-weight: 300;
             font-size: 1.5rem;
             margin: 0;
         }
 @media (min-width: 530px) {
 .home__my-info h3{
-                font-size: 2.9rem
+                font-size: 2.2rem
         }
+    }
+.home__job{
+        position: relative;
+        display: inline-block;
+         z-index: 3;
+         border-bottom: 1px solid #ffffff;
+         padding: 10px;
+         letter-spacing: 4px;
     }
 .section{
     padding: 6rem 0;
@@ -313,8 +374,8 @@ blockquote p {
     }
 .section-title h2{
             text-transform: uppercase;
-            color: #263d7f;
-            font-weight: 800;
+            color: #00120b;
+            font-weight: 600;
             letter-spacing: 5px;
             line-height: 3.75rem;
             font-size: 2rem;
@@ -324,8 +385,13 @@ blockquote p {
                 font-size: 3.75rem
         }
     }
+.section-title h2 span{
+                color: #57AA02;
+                font-weight: 200;
+                letter-spacing: 2px;
+            }
 .section-title p{
-            color: #6b818c;
+            color: #7e868e;
             font-size: 16px;
             line-height: 23px;
             font-weight: 300;
@@ -334,10 +400,19 @@ blockquote p {
 .border{
     display: block;
     margin: 20px auto;
-    width: 60px;
-    height: 3px;
-    background-color: #f18805;
+    width: 250px;
+    height: 1px;
+    background-color: #7e868e;
 }
+.border:after{
+         content: '';
+         position: absolute;
+         left: 48%;
+         right: 0;
+         width: 50px;
+         height: 2px;
+         background-color: #57AA02;
+    }
 .about__info{
          margin-top: 50px;
          margin-bottom: 50px;
@@ -353,17 +428,18 @@ blockquote p {
         font-weight: bold;
     }
 .about__info-title p{
-            color: #f18805;
+            color: #00120b;
             font-size: 1.75rem;
             padding-bottom: 10px;
+            font-weight: 300;
         }
 .about__info-details p{
-            color: #6b818c;
+            color: #7e868e;
             font-size: 16px;
             padding-bottom: 10px;
         }
 .about__signature{
-        color: #f18805;
+        color: #57AA02;
         font-family: 'Arizonia', cursive;
         font-size: 4rem;
         margin-top: 30px;
@@ -371,23 +447,23 @@ blockquote p {
     }
 .about__extra h4{
             text-transform: uppercase;
-            color: #f18805;
+            color: #00120b;
             font-size: 1.75rem;
             margin-bottom: 2rem;
-            font-weight: bold;
+            font-weight: 300;
         }
 .about__extra-icons ul{
             padding: 0;
         }
 .about__extra-icons ul li{
-                background-color: #d8e4ff;
+                background-color: #f1f1f1;
                 display: inline-block;
                 float: left;
                 margin: 0 10px 10px 0;
                 width: 100px;
             }
 .about__extra-icons ul li p{
-                    color: #6b818c;
+                    color: #7e868e;
                     font-size: 1.50rem;
                     font-weight: 500;
                     padding: 1.50rem;

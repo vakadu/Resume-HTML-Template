@@ -1,8 +1,8 @@
 .btn{
-    background-color: $orange;
+    background-color: none;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
-    color: #FFFFFF;
+    color: $white;
     text-shadow: none;
     font-weight: bold;
 
@@ -11,7 +11,7 @@
     }
 
     &:hover, &:focus{
-        color: #FFFFFF;
+        color: $white;
     }
 
     &--vv{
@@ -21,9 +21,28 @@
         display: inline-block;
     }
 
+    &--medium {
+        font-size:14px;
+        padding:12px 20px;
+        line-height:14px
+    }
+
     &--large {
         font-size:16px;
         padding:15px 25px;
         line-height:16px
+    }
+
+    &--green{
+        background-color: $green;
+    }
+
+    &--ghost{
+        border: 3px solid $white;
+        background: transparent;
+        letter-spacing: 2px;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 0;
     }
 }

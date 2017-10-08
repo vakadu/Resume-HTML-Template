@@ -12,14 +12,20 @@
 
         h2{
             text-transform: uppercase;
-            color: $blue;
-            font-weight: 800;
+            color: $black;
+            font-weight: 600;
             letter-spacing: 5px;
             line-height: 3.75rem;
             font-size: 2rem;
 
             @mixin atSmall{
                 font-size: 3.75rem;
+            }
+
+            span{
+                color: $green;
+                font-weight: 200;
+                letter-spacing: 2px;
             }
         }
 
@@ -36,7 +42,17 @@
 .border{
     display: block;
     margin: 20px auto;
-    width: 60px;
-    height: 3px;
-    background-color: $orange;
+    width: 250px;
+    height: 1px;
+    background-color: $grey;
+
+    &:after{
+         content: '';
+         position: absolute;
+         left: 48%;
+         right: 0;
+         width: 50px;
+         height: 2px;
+         background-color: $green;
+    }
 }
