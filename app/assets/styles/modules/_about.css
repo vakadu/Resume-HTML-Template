@@ -1,0 +1,74 @@
+.about{
+
+    &__info{
+         margin-top: 50px;
+         margin-bottom: 50px;
+        @mixin atLarge{
+            margin: 0;
+        }
+    }
+
+    &__info-title{
+        float: left;
+        margin-right: 20px;
+        font-weight: bold;
+
+        p{
+            color: $orange;
+            font-size: 1.75rem;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__info-details{
+        p{
+            color: $grey;
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__signature{
+        color: $orange;
+        font-family: 'Arizonia', cursive;
+        font-size: 4rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__extra{
+        h4{
+            text-transform: uppercase;
+            color: $orange;
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    &__extra-icons{
+        ul{
+            padding: 0;
+
+            li{
+                background-color: $white;
+                display: inline-block;
+                float: left;
+                margin: 0 10px 10px 0;
+                width: 100px;
+
+                p{
+                    color: $grey;
+                    font-size: 1.50rem;
+                    font-weight: 500;
+                    padding: 1.50rem;
+                    text-align: center;
+
+                    i{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
