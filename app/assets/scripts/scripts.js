@@ -20,6 +20,7 @@
     function parallaxInit() {
 
         $('#section-home').parallax("30%", 0.3);
+        $('#section-work').parallax("30%", 0.1);
     }
 
 })(jQuery);

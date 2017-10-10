@@ -1,0 +1,40 @@
+.overlay {
+    background: repeat scroll 0 0 rgba(0, 0, 0, .5);
+    height: 100%;
+    min-height: 615px;
+    position: relative;
+
+    &:before{
+         content: "";
+         position: absolute;
+         width: 50%;
+         transition: top 1s ease 0.3s, background 1s ease 0s;
+         left: 0;
+         top: 0;
+         height: 100%;
+         background: rgba(255, 255, 255, 0.1);
+    }
+
+    &:after{
+         content: "";
+         position: absolute;
+         width: 50%;
+         transition: bottom 1s ease 0.3s, background 1s ease 0s;
+         right: 0;
+         bottom: 0;
+         height: 100%;
+         background: rgba(255, 255, 255, 0.13);
+    }
+}
+
+.home:hover .overlay:before{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.home:hover .overlay:after{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay2{
+    background-color:rgba(0,0,0,0.6);
+}

@@ -39,6 +39,16 @@
     }
 }
 
+.title{
+    margin-bottom: 80px;
+
+    h1{
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 400;
+    }
+}
+
 .border{
     display: block;
     margin: 20px auto;

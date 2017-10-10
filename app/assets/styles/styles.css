@@ -3,7 +3,9 @@
 @import "base/_mixins.css";
 @import "modules/_social.css";
 @import "modules/_button.css";
+@import "modules/_overlay.css";
 @import "modules/_home.css";
 @import "modules/_section.css";
 @import "modules/_about.css";
 @import "modules/_resume.css";
+@import "modules/_work.css";
