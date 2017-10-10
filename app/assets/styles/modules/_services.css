@@ -1,0 +1,79 @@
+.services__left{
+    float: left;
+
+    .services__icon{
+        float: right;
+        width: 85px;
+        height: 85px;
+        background-color: $whitesmoke;
+        color: $black;
+        border-radius: 5px;
+        line-height: 85px;
+        text-align: center;
+        margin-left: 25px;
+        font-size: 2.5rem;
+
+        @mixin atSmall{
+            font-size: 4rem;
+        }
+    }
+
+    .services__content{
+        text-align: right;
+    }
+}
+
+.services__right{
+    float: right;
+
+    .services__icon{
+        float: left;
+        width: 85px;
+        height: 85px;
+        background-color: $whitesmoke;
+        color: $black;
+        border-radius: 5px;
+        line-height: 85px;
+        text-align: center;
+        margin-right: 25px;
+        font-size: 2.5rem;
+
+        @mixin atSmall{
+            font-size: 4rem;
+        }
+    }
+
+    .services__content{
+        text-align: left;
+    }
+}
+
+.services{
+    &__box{
+        margin-bottom: 10px;
+    }
+}
+
+.services__content{
+    h3{
+        color: $green;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.375rem;
+
+        @mixin atSmall{
+            font-size: 2rem;
+        }
+    }
+
+    p{
+        color: $grey;
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
+
+.services__box:hover i.services__icon{
+    color: $white;
+    background-color: $green;
+}

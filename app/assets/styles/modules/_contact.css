@@ -1,0 +1,69 @@
+.contact{
+    background: url("/assets/img/contact.jpeg");
+    min-height: 400px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    &__get-in{
+        list-style: none;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+         li{
+             i{
+                 width: 42px;
+                 height: 42px;
+                 border-radius: 25px;
+                 background-color: $green;
+                 line-height: 20px;
+                 margin-bottom: 10px;
+                 padding: 10px;
+             }
+         }
+
+    p{
+        display: inline-block;
+        padding-left: 10px;
+        }
+    }
+
+    &__form input[type='text'], &__form input[type='email'], textarea{
+        color: $black;
+        font-size: 14px;
+        height: 40px;
+        padding: 24px 3%;
+        background:none repeat scroll 0 0 $whitesmoke;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        width: 100%;
+        border:0;
+        transition: all 0.2s linear;
+    }
+
+    &__form input[type='text']:focus, &__form textarea:focus, &__form input[type='email']:focus{
+        background-color: $whitesmoke;
+        box-shadow: none;
+        border: none;
+    }
+
+    &__form textarea{
+        height: 174px;
+        resize: none;
+    }
+
+    &__form input.btn[type="submit"]{
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 50px;
+        outline: none;
+        color: $white;
+        padding: 22px;
+        background-color: $green;
+    }
+}
+
+.gmap{
+    height: 400px;
+}

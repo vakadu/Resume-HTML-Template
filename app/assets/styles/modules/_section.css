@@ -52,17 +52,11 @@
 .border{
     display: block;
     margin: 20px auto;
-    width: 250px;
+    width: 100px;
     height: 1px;
-    background-color: $grey;
+    background-color: $green;
 
-    &:after{
-         content: '';
-         position: absolute;
-         left: 48%;
-         right: 0;
-         width: 50px;
-         height: 2px;
-         background-color: $green;
+    @mixin atSmall{
+        width: 200px;
     }
 }

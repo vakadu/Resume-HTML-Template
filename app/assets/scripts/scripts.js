@@ -15,12 +15,14 @@
         parallaxInit();
         initTyped();
         new WOW().init();
+        gmapInit();
     });
 
     function parallaxInit() {
 
         $('#section-home').parallax("30%", 0.3);
-        $('#section-work').parallax("30%", 0.1);
+        $('#section-work').parallax("30%", 0.3);
+        $('#section-contact').parallax("30%", 0.3);
     }
 
 })(jQuery);
@@ -61,4 +63,27 @@ function initTyped() {
         resetCallback: function() {
         }
     });
+}
+
+function gmapInit() {
+    var center = [13.008857, 77.649447];
+    $('#gmap').gmap3({
+            center: center,
+            zoom: 13,
+            mapTypeId : google.maps.MapTypeId.ROADMAP
+        })
+        .bicyclinglayer()
+        .circle({
+            center: center,
+            radius : 250,
+            fillColor : "#57AA02",
+            strokeColor : "#f18805"
+        })
+        .on('click', function (circle, event) {
+            circle.setOptions({fillColor: "#AAFF55"});
+            setTimeout(function () {
+                circle.setOptions({fillColor: "#FFAF9F"});
+            }, 200);
+        })
+    ;
 }

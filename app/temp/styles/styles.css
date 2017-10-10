@@ -148,13 +148,21 @@ blockquote p {
     font-weight: bold;
     line-height: 30px;
 }
+.outline {
+    background-color: none;
+    color: #222222;
+    line-height: 10px!important;
+}
 .parallax{
     background-attachment: fixed !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     text-align: center;
     color: #FFFFFF;
+}
+.white{
+    color: #FFFFFF !important;
 }
 /*for screens that are greater than 530px apply this mixin*/
 /*for screens that are greater than 800px apply this mixin*/
@@ -453,18 +461,14 @@ blockquote p {
 .border{
     display: block;
     margin: 20px auto;
-    width: 250px;
+    width: 100px;
     height: 1px;
-    background-color: #7e868e;
+    background-color: #57AA02;
 }
-.border:after{
-         content: '';
-         position: absolute;
-         left: 48%;
-         right: 0;
-         width: 50px;
-         height: 2px;
-         background-color: #57AA02;
+@media (min-width: 530px) {
+.border{
+        width: 200px
+}
     }
 .about__info{
          margin-top: 50px;
@@ -797,4 +801,134 @@ blockquote p {
         }
 .row [class^="col-"]:last-child .work__process:before{
     display: none;
+}
+.services__left{
+    float: left;
+}
+.services__left .services__icon{
+        float: right;
+        width: 85px;
+        height: 85px;
+        background-color: #f0f2f7;
+        color: #00120b;
+        border-radius: 5px;
+        line-height: 85px;
+        text-align: center;
+        margin-left: 25px;
+        font-size: 2.5rem;
+    }
+@media (min-width: 530px) {
+.services__left .services__icon{
+            font-size: 4rem
+    }
+    }
+.services__left .services__content{
+        text-align: right;
+    }
+.services__right{
+    float: right;
+}
+.services__right .services__icon{
+        float: left;
+        width: 85px;
+        height: 85px;
+        background-color: #f0f2f7;
+        color: #00120b;
+        border-radius: 5px;
+        line-height: 85px;
+        text-align: center;
+        margin-right: 25px;
+        font-size: 2.5rem;
+    }
+@media (min-width: 530px) {
+.services__right .services__icon{
+            font-size: 4rem
+    }
+    }
+.services__right .services__content{
+        text-align: left;
+    }
+.services__box{
+        margin-bottom: 10px;
+    }
+.services__content h3{
+        color: #57AA02;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.375rem;
+    }
+@media (min-width: 530px) {
+.services__content h3{
+            font-size: 2rem
+    }
+    }
+.services__content p{
+        color: #7e868e;
+        line-height: 28px;
+        font-size: 16px;
+    }
+.services__box:hover i.services__icon{
+    color: #ffffff;
+    background-color: #57AA02;
+}
+.contact{
+    background: url("/assets/img/contact.jpeg");
+    min-height: 400px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.contact__get-in{
+        list-style: none;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+.contact__get-in li i{
+                 width: 42px;
+                 height: 42px;
+                 border-radius: 25px;
+                 background-color: #57AA02;
+                 line-height: 20px;
+                 margin-bottom: 10px;
+                 padding: 10px;
+             }
+.contact__get-in p{
+        display: inline-block;
+        padding-left: 10px;
+        }
+.contact__form input[type='text'], .contact__form input[type='email'], .contact textarea{
+        color: #00120b;
+        font-size: 14px;
+        height: 40px;
+        padding: 24px 3%;
+        background:none repeat scroll 0 0 #f0f2f7;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        width: 100%;
+        border:0;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+.contact__form input[type='text']:focus, .contact__form textarea:focus, .contact__form input[type='email']:focus{
+        background-color: #f0f2f7;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: none;
+    }
+.contact__form textarea{
+        height: 174px;
+        resize: none;
+    }
+.contact__form input.btn[type="submit"]{
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 50px;
+        outline: none;
+        color: #ffffff;
+        padding: 22px;
+        background-color: #57AA02;
+    }
+.gmap{
+    height: 400px;
 }

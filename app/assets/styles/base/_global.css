@@ -184,11 +184,21 @@ blockquote p {
     line-height: 30px;
 }
 
+.outline {
+    background-color: none;
+    color: #222222;
+    line-height: 10px!important;
+}
+
 .parallax{
     background-attachment: fixed !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     text-align: center;
     color: #FFFFFF;
+}
+
+.white{
+    color: #FFFFFF !important;
 }
