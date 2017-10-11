@@ -6,7 +6,7 @@
         padding: 50px 20px;
 
         @mixin atSmall{
-            padding: 100px 20px;
+            padding: 80px 20px;
         }
     }
 

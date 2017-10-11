@@ -20,6 +20,7 @@
 
     .services__content{
         text-align: right;
+        padding-right: 110px;
     }
 }
 
@@ -45,6 +46,7 @@
 
     .services__content{
         text-align: left;
+        padding-left: 110px;
     }
 }
 

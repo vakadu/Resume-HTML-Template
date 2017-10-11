@@ -366,7 +366,7 @@
             <span class="border"></span>
         </div>
         <div class="row">
-            <div class="col-md-6 services__left">
+            <div class="col-md-6 services__left wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="services__box">
                     <i class="services__icon fa fa-leaf"></i>
                     <div class="services__content">
@@ -389,7 +389,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 services__right">
+            <div class="col-md-6 services__right wow animated fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="services__box">
                     <i class="services__icon fa fa-leaf"></i>
                     <div class="services__content">
@@ -419,25 +419,33 @@
 <section id="section-contact" class="contact parallax">
     <div class="overlay2">
         <div class="container">
-            <div class="section-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="section-title wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
                 <h2 class="white">Contact <span>Me</span></h2>
                 <span class="border"></span>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <h2>Get in Touch</h2>
-                    <ul class="contact__get-in">
-                        <li><i class="fa fa-envelope-o"></i><p>vakadu10@gmail.com</p></li>
-                        <li><i class="fa fa-phone"></i><p>+91 9972380619</p></li>
-                        <li><i class="fa fa-map-marker"></i><p>Bangalore, India</p></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
+                <!--<div class="col-md-6 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">-->
+                    <!--<h2>Get in Touch</h2>-->
+                    <!--<ul class="contact__get-in">-->
+                        <!--<li><i class="fa fa-envelope-o"></i><p>vakadu10@gmail.com</p></li>-->
+                        <!--<li><i class="fa fa-phone"></i><p>+91 9972380619</p></li>-->
+                        <!--<li><i class="fa fa-map-marker"></i><p>Bangalore, India</p></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <div class="col-md-12 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                     <form id="contact-form" class="contact__form" method="post" action="">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Message" rows="8" ></textarea>
-                        <input type="submit" class="btn btn--vv btn--large outline"  id="submit" value="Send Message">
+                        <div class="col-md-6">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea name="message" placeholder="Message" rows="8" ></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn--vv btn--large outline"  id="submit" value="Send Message">
+                        </div>
                     </form>
                 </div>
             </div>
@@ -445,11 +453,29 @@
     </div>
 </section>
 
-<section id="section-map" class="section">
+<section id="section-map" class="section wow animated zoomIn" data-wow-duration="1s" data-wow-delay=".5s">
     <div class="container">
         <div id="gmap" class="gmap col-md-12"></div>
     </div>
 </section>
+
+<footer id="section-footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <p class="footer__copyright">&copy; Copyright 2017 <a href="#">vakaduvinod.com</a></p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <ul class="social">
+                    <li><a class="" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a class="" href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a class="" href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <script type="text/javascript" src="assets/scripts/jquery-3.2.1.js"></script>

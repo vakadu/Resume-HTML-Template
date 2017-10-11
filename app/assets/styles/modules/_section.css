@@ -40,12 +40,17 @@
 }
 
 .title{
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     h1{
         text-transform: uppercase;
         color: $white;
         font-weight: 400;
+        font-size: 2rem;
+
+        @mixin atSmall{
+            font-size: 3.75rem;
+        }
     }
 }
 
