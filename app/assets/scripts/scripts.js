@@ -8,6 +8,29 @@
             speed: 1000,
             easing: 'easeOutCubic'
         });
+
+        /* Scroll to Top */
+        var scrollTimeout;
+
+        $('a.scroll-top').click(function () {
+            $('html, body').animate({scrollTop: 0}, 500);
+            return false;
+        });
+
+        $(window).scroll(function () {
+            clearTimeout(scrollTimeout);
+
+            if ($(window).scrollTop() > 400){
+                scrollTimeout = setTimeout(function () {
+                    $('a.scroll-top:hidden').fadeIn()
+                }, 100, "easeInOutExpo");
+            }
+            else {
+                scrollTimeout = setTimeout(function () {
+                    $('a.scroll-top:visible').fadeOut()
+                }, 100, "easeInOutExpo");
+            }
+        });
     });
 
     $(window).on('load' ,function () {

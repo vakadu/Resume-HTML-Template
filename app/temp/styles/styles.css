@@ -1130,3 +1130,25 @@ blockquote p {
 .footer__copyright a:hover, .footer__copyright a:focus{
             color: #f0f2f7;
         }
+
+.scroll-top{
+    background: none repeat scroll 0 0 #57AA02;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.875rem;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    outline: none;
+    z-index: 9999;
+}
+
+.scroll-top:hover, .scroll-top:focus{
+        background: none repeat scroll 0 0 #f18805;
+        color: #f0f2f7;
+    }
