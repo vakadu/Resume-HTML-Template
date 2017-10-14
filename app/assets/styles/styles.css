@@ -1,10 +1,12 @@
 @import "base/_global.css";
 @import "base/_variables.css";
 @import "base/_mixins.css";
+@import "modules/_loader.css";
 @import "modules/_social.css";
 @import "modules/_button.css";
 @import "modules/_overlay.css";
 @import "modules/_home.css";
+@import "modules/_nav.css";
 @import "modules/_section.css";
 @import "modules/_about.css";
 @import "modules/_resume.css";

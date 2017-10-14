@@ -1,0 +1,27 @@
+.loader{
+    background-color: $whitesmoke;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &__item{
+        background: none repeat scroll 0 0 $whitesmoke;
+        /*border: 3px solid;*/
+        /*border-bottom-color: rgba(0, 0, 0, 0) !important;*/
+        border-radius: 200px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -20px 0 0 -20px;
+        text-align: center;
+    }
+
+    &__green{
+         color: $green;
+        /*border-color: $green;*/
+    }
+}

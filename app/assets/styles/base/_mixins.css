@@ -18,3 +18,25 @@
     }
 }
 /*for screens that are greater than 1200px apply this mixin*/
+
+
+@define-mixin atMaxSmall {
+    @media (max-width: 530px) {
+        @mixin-content ;
+    }
+}
+/*for screens that are greater than 530px apply this mixin*/
+
+@define-mixin atMaxMedium {
+    @media (max-width: 800px) {
+        @mixin-content ;
+    }
+}
+/*for screens that are greater than 800px apply this mixin*/
+
+@define-mixin atMaxLarge {
+    @media (max-width: 1200px) {
+        @mixin-content ;
+    }
+}
+/*for screens that are greater than 1200px apply this mixin*/

@@ -7,9 +7,9 @@
          margin-top: 40px;
          text-align: center;
 
-        @mixin atSmall{
-            text-align: left;
-        }
+        /*@mixin atSmall{*/
+            /*text-align: center;*/
+        /*}*/
 
         a{
             color: $green;
