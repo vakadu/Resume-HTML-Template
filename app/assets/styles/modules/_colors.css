@@ -1,0 +1,80 @@
+.colors-switcher{
+    position: fixed;
+    width: 100px;
+    top: 90px;
+    right: 0;
+    padding: 20px 18px 14px 20px;
+    z-index: 2000;
+    background-color: $white;
+    border-radius: 2px 0 0 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition:all .4s ease-in-out;
+
+    p{
+        font-size: 11px;
+        line-height: 0;
+    }
+
+    & #show-panel{
+        position: absolute;
+        left: -38px;
+        top: 15px;
+        width: 38px;
+        height: 38px;
+        z-index: 2000;
+        display: block;
+        background-color: $white;
+        border-radius:2px 0 0 2px;
+        border:1px solid rgba(0,0,0,.1);
+        border-right:none;
+        cursor: pointer;
+
+        i{
+            color: $black;
+            font-size: 20px;
+            line-height: 38px;
+            margin-left: 12px;
+        }
+    }
+
+    .colors-list{
+        margin: 0;
+        padding: 0;
+
+        li{
+            float: left;
+            display: block;
+            margin-bottom:2px;
+            margin-right:6px;
+
+            a{
+                display:inline-block;
+                width:24px;
+                height:24px;
+                border-radius:2px;
+                transition:all 0.2s linear;
+                cursor: pointer;
+
+                &:hover{
+                     box-shadow:inset 0 0 6px rgba(0,0,0,.4);
+                }
+
+                &.orange{
+                    background-color: $orange;
+                }
+
+                &.green{
+                     background-color: $green;
+                }
+
+                &.red{
+                     background-color: #cb202d;
+                }
+
+                &.teal{
+                     background-color: #008080;
+                }
+            }
+        }
+    }
+}

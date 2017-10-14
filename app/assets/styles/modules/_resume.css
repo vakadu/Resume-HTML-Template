@@ -37,8 +37,8 @@
         font-weight: 500;
         text-align: center;
         border-radius: 5px;
-        background: url("/assets/img/green-band.png");
-        padding: 35px 25px 25px 25px;
+        /*background: url("/assets/img/green-band.png");*/
+        padding: 15px 15px 15px 15px;
         text-transform: uppercase;
         letter-spacing: 0;
         font-size: 1.5rem;
@@ -67,7 +67,6 @@
         text-align: center;
         margin: 0 auto;
         border-radius: 50%;
-        background-color: $blue;
         z-index: 7;
 
         i{
@@ -142,7 +141,6 @@
     &__timeline-post-left > &__timeline-post:hover > &__timeline-post-content-holder > &__timeline-post-icon{
      position: absolute;
      right: 0;
-     background-color: $green;
      width: 15px;
      height: 15px;
      border-radius: 50%;
@@ -154,7 +152,6 @@
     &__timeline-post-right > &__timeline-post:hover > &__timeline-post-content-holder > &__timeline-post-icon{
          position: absolute;
          left: 0;
-         background-color: $green;
          width: 15px;
          height: 15px;
          border-radius: 50%;
@@ -191,7 +188,6 @@
 
     &__timeline-post-title{
         h4{
-            color: $green;
             font-size: 22px;
             font-weight: 300;
         }
@@ -234,7 +230,6 @@
         display: inline-block;
         width: 40px;
         height: 40px;
-        background-color: $blue;
         color: $white;
         font-size: 18px;
         line-height: 40px;

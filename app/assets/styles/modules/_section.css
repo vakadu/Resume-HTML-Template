@@ -23,7 +23,6 @@
             }
 
             span{
-                color: $green;
                 font-weight: 200;
                 letter-spacing: 2px;
             }
@@ -58,8 +57,7 @@
     display: block;
     margin: 20px auto;
     width: 100px;
-    height: 1px;
-    background-color: $green;
+    height: 2px;
 
     @mixin atSmall{
         width: 200px;

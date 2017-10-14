@@ -21,7 +21,7 @@
     }
 
     &__green{
-         color: $green;
+         /*color: $green;*/
         /*border-color: $green;*/
     }
 }

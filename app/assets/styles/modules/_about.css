@@ -30,7 +30,6 @@
     }
 
     &__signature{
-        color: $green;
         font-family: 'Arizonia', cursive;
         font-size: 4rem;
         margin-top: 30px;

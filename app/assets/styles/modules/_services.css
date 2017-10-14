@@ -58,7 +58,6 @@
 
 .services__content{
     h3{
-        color: $green;
         text-transform: uppercase;
         font-weight: 300;
         font-size: 1.375rem;
@@ -77,5 +76,4 @@
 
 .services__box:hover i.services__icon{
     color: $white;
-    background-color: $green;
 }
